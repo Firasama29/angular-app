@@ -9,7 +9,7 @@ export class MyAppComponent implements OnInit {
 
   /*task 1*/ clickCounter: number = 0;
 
-  /*task 2*/ name: string = '';
+  name: string = '';
 
   constructor() { }
 

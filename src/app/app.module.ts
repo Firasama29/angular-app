@@ -7,6 +7,7 @@ import { MyAppComponent } from './my-app/my-app.component';
 import { MyListComponent } from './my-list/my-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+
 import { CarsComponent } from './cars/cars.component';
 
 
@@ -20,8 +21,9 @@ import { CarsComponent } from './cars/cars.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
+    
   
   ],
   providers: [],

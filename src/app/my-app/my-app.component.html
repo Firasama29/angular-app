@@ -7,16 +7,16 @@
 </div>
 
 <h2>View String</h2>
+<!--
+<div class="container">
 
-
-<!--<div class="container">
     <input type="text" [(ngModel)]="name">
     <br>
-    <p>Text is {{name}} </p>
+    <p>Text is {{ name }} </p>
 </div>
 -->
 <h2>Ng-template</h2>
-
+<h2>hi</h2>
 <div class="container">
     <p><strong> Using ng-template</strong></p>
     <ng-template [ngIf]="clickCounter > 5 && clickCounter > 8" [ngIfElse]="none">
@@ -27,11 +27,12 @@
 </div>
 
 <h2>Class-binding</h2>
-<!--
+
 <div class="container" [class.active]="clickCounter > 2">
     <button type="button" name="counter" (click)="countClick()">click</button>
     <p>You've clicked {{clickCounter}} times</p>
 </div>
+<!--
 <div class="container" [ngClass]="setClass()">
     <button type="button" name="counter" (click)="countClick()">click</button>
     <p>You've clicked {{clickCounter}} times</p>
