@@ -1,0 +1,43 @@
+<h2>A counter</h2>
+<!--style-binding for single style property-->
+
+<div class="container" [style.background-color]="clickCounter<2 ? 'lightgrey' : 'steelblue'">
+    <button type="button" name="count" (click)="countClick()">click</button>
+    <p>You've clicked {{clickCounter}} times</p>
+</div>
+
+<h2>View String</h2>
+
+
+<!--<div class="container">
+    <input type="text" [(ngModel)]="name">
+    <br>
+    <p>Text is {{name}} </p>
+</div>
+-->
+<h2>Ng-template</h2>
+
+<div class="container">
+    <p><strong> Using ng-template</strong></p>
+    <ng-template [ngIf]="clickCounter > 5 && clickCounter > 8" [ngIfElse]="none">
+        <p>{{name}} </p>
+    </ng-template>
+    <ng-template #none>
+    </ng-template>
+</div>
+
+<h2>Class-binding</h2>
+<!--
+<div class="container" [class.active]="clickCounter > 2">
+    <button type="button" name="counter" (click)="countClick()">click</button>
+    <p>You've clicked {{clickCounter}} times</p>
+</div>
+<div class="container" [ngClass]="setClass()">
+    <button type="button" name="counter" (click)="countClick()">click</button>
+    <p>You've clicked {{clickCounter}} times</p>
+    <p>using ngClass, first we reference a method</p>
+    <p> then we declare that method in component.ts</p>
+    <p>and instantiate an object that contains classes we want.</p>
+    <p> Then we declare these classes in css.</p>
+</div>
+-->

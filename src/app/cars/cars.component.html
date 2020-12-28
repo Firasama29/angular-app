@@ -1,0 +1,9 @@
+<h4 of car manufacturers></h4>
+<p><strong>We use *ngFor to iterate through a list of data</strong></p>
+<ul *ngIf="cars">
+    <li *ngFor="let car of cars">
+        <p class="name">{{car.name}}</p>
+        <p class="avg_horsepower">average horsepower - {{car.avg_horsepower}}</p>
+        <p>average price - {{car.avg_price}} </p>
+    </li>
+</ul>
