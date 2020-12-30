@@ -9,13 +9,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { CarsComponent } from './cars/cars.component';
+import { CarItemComponent } from './car-item/car-item.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MyListComponent,
-    CarsComponent
+    CarsComponent,
+    CarItemComponent
     
   ],
   imports: [

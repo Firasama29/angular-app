@@ -1,3 +1,4 @@
+import { Cars } from './../../cars';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../http.service';
@@ -9,7 +10,7 @@ import { HttpService } from '../http.service';
 })
 export class CarsComponent implements OnInit {
 
-  cars: Object;
+  cars: any;
   constructor(private _http: HttpService) { }
 
   ngOnInit(): void {
