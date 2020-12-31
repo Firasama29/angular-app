@@ -1,0 +1,81 @@
+<body>
+    <h2>Tasks I've learned and completed</h2>
+    <p>
+        Here I list down the practice tasks I've learned
+    </p><br>
+
+    <table id="myTable">
+        <tr>
+            <th>Title</th>
+            <th>discription</th>
+            <th>topics</th>
+        </tr>
+        <tr>
+            <td>
+                <p>Counter with interpolation</p>
+            </td>
+            <td>
+                <p>declared a counting method and used interpolation to display number of click times</p>
+            </td>
+            <td>Interpolation</td>
+        </tr>
+        <tr>
+            <td>
+                <p>Display text with two-way binding</p>
+            </td>
+            <td>
+                <p>used [(ngModel)] which allows two-way binding</p>
+            </td>
+            <td>Interpolation, two-way-binding [(ngModel)] </td>
+        </tr>
+        <tr>
+            <td>
+                <p>ng-template, ngIf and ngIfElse</p>
+            </td>
+            <td>
+                <p>used ng-template for conditionals</p>
+            </td>
+            <td>Ng-template and interpolation</td>
+        </tr>
+        <tr>
+            <td>
+                <p>Style-binding & class-binding</p>
+            </td>
+            <td>
+                <p>tried single and multiple style binding as well as class-binding</p>
+            </td>
+            <td>[style.property], [ngStyle], [class.className], [ngClass]</td>
+        </tr>
+        <tr>
+            <td>
+                <p>Http request</p>
+            </td>
+            <td>
+                <p>sent an http request to an external api's endpoint to display a list of car brands</p>
+                <p>I defined the http request in the service file, and bound it to data object in the component file</p>
+                <p>I used ngFor to iterate through the list of car brands</p>
+            </td>
+            <td>Interpolation, ngIf and ngFor</td>
+        </tr>
+    </table>
+    <br>
+
+    <button type="button" onclick="addRowFunction()">New task</button>
+    <button type="button" onclick="deleteRowFunction()">Delete task</button>
+
+    <script>
+        function addRowFunction() {
+            var table = document.getElementById("myTable");
+            var row = table.insertRow(1);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            cell1.innerHTML = "row added";
+            cell2.innerHTML = "row added";
+        }
+
+        function deleteRowFunction() {
+            document.getElementById("myTable").deleteRow(0);
+        }
+    </script>
+
+</body>

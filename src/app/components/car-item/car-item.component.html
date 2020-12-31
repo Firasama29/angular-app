@@ -1,0 +1,14 @@
+<div [ngClass]="onCheck(car)">
+
+    <input (change)="onCheck(car)" type="checkbox">
+    <input (click)="onDelete(car)" type="button" value="delete">
+    <p class="name"><strong>brand:</strong> {{ car.id }}</p>
+    <p class="name"><strong>brand:</strong> {{ car.name }}</p>
+    <p class="horsepower"><strong>average horsepower:</strong> {{ car.avg_horsepower }}</p>
+    <p class="price"><strong>average price:</strong> {{ car.avg_price }}</p>
+
+
+
+    <br>
+</div>
+<!-- we pass data to car-item component and export it to cars component using component selector -->
